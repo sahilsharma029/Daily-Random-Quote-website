@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(218, 57, 57) , rgb(194, 140, 140));
+}
+
+.quote-box{
+    background: linear-gradient(90deg,rgb(194,140,140),rgb(218,57,57));
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0,0,0,0.20);
+}
+
+.quote-box h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.quote-box h2::after{
+    content: '';
+    width: 150px;
+    height: 3px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(202, 163, 163);
+}
+
+.quote-box blockquote{
+    font-size: 26px;
+    min-height: 110px;
+
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after{
+    content: '"';
+}
+
+.quote-box span{
+   display: block;
+   float: right;
+   margin-top: 10px;
+   position: relative;
+}
+
+.quote-box span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    background: rgb(56, 54, 54);
+}
+
+.social{
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social button{
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: 1px 1px;
+    font-weight: 600;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.social button img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
